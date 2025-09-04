@@ -6,7 +6,11 @@ export default function Email() {
     <>
       <div className="Email">
         <div className="email">
-          <p className="gmail">EmailAddress</p>
+          <input
+            type="text"
+            className="gmail"
+            placeholder="Email Address"
+          ></input>
           <img src={errorIcon} alt="errorIcon" className="errorIcon"></img>
           <img src={Arrow} alt="Arrow" className="Arrow"></img>
         </div>
