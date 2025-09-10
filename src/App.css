@@ -52,10 +52,10 @@ body,
   width: 100vh;
   height: 100vh;
 }
-.email {
+/* .email {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+ 
   padding-top: 1rem;
   margin-top: 2rem; 
 }
@@ -69,14 +69,7 @@ input{
     border: 2px solid #e4d5d9;
   }
 
-/* .gmail {
-  padding-left: 1rem;
-  margin-bottom: 1rem;
- 
-  font-size: 20px;
-  background-color: red;
-  display: inline-block;
-} */
+
 ::placeholder{
   color: #ebdddd; 
   padding-left: 1rem;
@@ -95,9 +88,57 @@ input{
 .errorIcon {
   margin-bottom: 1rem;
   /* margin-left: 8rem; */
-  visibility: hidden;
+  /* visibility: hidden; */
+/* } */
+/* .Arrow {
+  background-color: #ee9b9c;
+  margin-left: -6rem;
+  border-radius: 30px;
+  padding: 0.5rem 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}  */
+
+.email {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  position: relative; /* needed for absolute positioning of icons */
 }
+
+.gmail {
+  border: 2px solid #e4d5d9;
+  border-radius: 25px;
+  height: 3rem;
+  width: 60%;
+  padding: 0.8rem 4rem 0.8rem 1rem; /* top/right/bottom/left */
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.gmail:hover {
+  border-color: #d68e90; /* subtle hover effect */
+}
+
+.gmail::placeholder {
+  color: #ebdddd;
+  font-size: 16px;
+}
+
+.errorIcon {
+  position: absolute;
+  right: 6rem; /* adjust distance from right */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  visibility: hidden; /* initially hidden */
+}
+
 .Arrow {
+ 
   background-color: #ee9b9c;
   margin-left: -6rem;
   border-radius: 30px;
@@ -105,7 +146,15 @@ input{
   height: 3rem;
   margin-bottom: 1rem;
 }
- 
+
+.errorMsg {
+  color: #d68e90;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  visibility: hidden; /* initially hidden */
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -147,7 +196,7 @@ input{
   }
   .email {
     width: 90%;
-    margin-left: 2rem;
+    margin-left: 7rem;
   }
   input{
     width: 90%;
@@ -155,7 +204,7 @@ input{
  
   .Arrow {
     /* margin-left: 4.1rem; */
-    padding: 3% 8.5%;
+    padding: 1% 8.5%;
   }
   .lastImg {
     height: 50vh;
