@@ -3,7 +3,7 @@ import Logo from "./components/logo";
 import Heading from "./components/heading";
 import Paragraph from "./components/paragraph";
 import Email from "./components/email";
-// import Row2Img from "./components/row2Img";
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ const Mobile = () => {
     <>
       <div className="mySection mobile row1">
         <Logo />
-        <div className="row2">{/* <Row2Img /> */}</div>
+        <div className="row2"></div>
         <Heading />
         <Paragraph />
         <Email />
@@ -39,7 +39,7 @@ const Desktop = () => {
           <Email />
         </div>
 
-        <div className="row2">{/* <Row2Img /> */}</div>
+        <div className="row2"></div>
       </div>
     </div>
   );

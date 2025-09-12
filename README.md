@@ -1,24 +1,118 @@
 <img src="https://socialify.git.ci/Ntombenhle2004/Task8.2-UI-Challenge/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Task8.2-UI-Challenge" width="640" height="320" />
 
-# Discription
+# Vite Task 8.1 UI Challenge
 
-This project is a **“Coming Soon”** landing page for Base Apparel. It features a clean, modern design with the brand logo, a headline that says “We’re Coming Soon”, a short introductory message, and an email subscription form. The form includes input validation to show an error message if the email address is invalid. The layout is responsive and styled with a minimal pink-themed design.
+This is a simple **React + Vite** project that demonstrates a responsive UI layout with separate components for **mobile** and **desktop** views. The project uses reusable components such as `Logo`, `Heading`, `Paragraph`, and `Email`. It is built with **TypeScript**, **Vite**, and **React 19**.
 
-# How to View the Project
+---
 
-1. Clone the repository
+##  Project Structure
 
-git clone https://github.com/Ntombenhle2004/Task8.2-UI-Challenge.git
+```
+src/
+│── App.jsx
+│── App.css
+│
+├── components/
+│   ├── logo.jsx
+│   ├── heading.jsx
+│   ├── paragraph.jsx
+│   ├── email.jsx
+│   └── row2Img.jsx (optional / commented out)
+│
+├── main.jsx
+```
 
-2. Navigate into the project folder
+---
 
-cd vite-Task-8-1-UI-Challange
+##  Features
 
-3. Install dependencies
-npm install
+- **Mobile Layout (`Mobile` component)**  
+  Displays the logo, heading, paragraph, and email input stacked vertically.  
 
-4. Run the project
+- **Desktop Layout (`Desktop` component)**  
+  Displays the same components in a structured two-row layout.  
 
-npm run dev
+- **Reusable Components**  
+  - `Logo`: Displays project logo  
+  - `Heading`: Title or heading text  
+  - `Paragraph`: Informational text  
+  - `Email`: Input field for email capture  
+  - `Row2Img`: (optional, currently commented out)  
 
-This will start a development server and open the project in your browser
+- **Vite + React 19** for fast development  
+- **TypeScript support**  
+- **Linting with ESLint**  
+
+---
+
+##  Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ntombenhle2004/Task8.2-UI-Challenge.git
+   cd vite-task8-1-ui-challenge
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+   The app will be available at: [http://localhost:5173](http://localhost:5173)
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## Dependencies
+
+```json
+"dependencies": {
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1"
+},
+"devDependencies": {
+  "@eslint/js": "^9.33.0",
+  "@types/react": "^19.1.10",
+  "@types/react-dom": "^19.1.7",
+  "@vitejs/plugin-react": "^5.0.0",
+  "eslint": "^9.33.0",
+  "eslint-plugin-react-hooks": "^5.2.0",
+  "eslint-plugin-react-refresh": "^0.4.20",
+  "globals": "^16.3.0",
+  "typescript": "~5.8.3",
+  "typescript-eslint": "^8.39.1",
+  "vite": "^7.1.2"
+}
+```
+
+---
+
+##  Usage
+
+- Modify **components** inside `src/components/` to update the UI.  
+- Add styles in **App.css**.  
+- Uncomment `Row2Img` in `App.jsx` if you want to include an image in the second row.  
+
+---
+
+## License
+
+This project is for **educational purposes**. You may use, modify, and distribute it freely.  
+
+---
+
