@@ -8,6 +8,29 @@ import Email from "./components/email";
 function App() {
   return (
     <>
+      <Mobile />
+      <Desktop />
+    </>
+  );
+}
+
+const Mobile = () => {
+  return (
+    <>
+      <div className="mySection mobile row1">
+        <Logo />
+        <div className="row2">{/* <Row2Img /> */}</div>
+        <Heading />
+        <Paragraph />
+        <Email />
+      </div>
+    </>
+  );
+};
+
+const Desktop = () => {
+  return (
+    <div className="desktop">
       <div className="mySection">
         <div className="row1">
           <Logo />
@@ -18,8 +41,7 @@ function App() {
 
         <div className="row2">{/* <Row2Img /> */}</div>
       </div>
-    </>
+    </div>
   );
-}
-
+};
 export default App;
