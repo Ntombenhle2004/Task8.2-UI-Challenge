@@ -18,7 +18,7 @@ src/
 │   ├── heading.jsx
 │   ├── paragraph.jsx
 │   ├── email.jsx
-│   └── row2Img.jsx (optional / commented out)
+│   
 │
 ├── main.jsx
 ```
